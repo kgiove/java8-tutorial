@@ -789,6 +789,13 @@ Furthermore the usage of annotations in Java 8 is expanded to two new targets:
 @interface MyAnnotation {}
 ```
 
+## File
+```java
+String text = "some text";
+String path = "some path";
+Files.writeString(Paths.get(path),  text);
+```
+
 ## Where to go from here?
 
 My programming guide to Java 8 ends here. If you want to learn more about all the new classes and features of the JDK 8 API, check out my [JDK8 API Explorer](http://winterbe.com/projects/java8-explorer/). It helps you figuring out all the new classes and hidden gems of JDK 8, like `Arrays.parallelSort`, `StampedLock` and `CompletableFuture` - just to name a few.
